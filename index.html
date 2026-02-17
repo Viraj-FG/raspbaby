@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RaspBaby — Adorable Baby & Maternity Essentials | Best Baby Clothes 2026</title>
+    <meta name="description" content="Discover the cutest baby clothes, nursery essentials, and maternity must-haves. Handpicked, top-rated products from Amazon — onesies, swaddles, strollers & more.">
+    <meta name="keywords" content="baby clothes, baby onesies, newborn outfits, maternity wear, nursery essentials, baby shower gifts, best baby products 2026, baby rompers, swaddles, baby shoes">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="RaspBaby — Adorable Baby & Maternity Essentials">
+    <meta property="og:description" content="Curated collection of the cutest baby clothes and maternity essentials. 200+ handpicked products from top brands.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://raspbaby.com">
+    <link rel="canonical" href="https://raspbaby.com">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "RaspBaby",
+        "url": "https://raspbaby.com",
+        "description": "Curated baby clothes, nursery essentials, and maternity must-haves",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://raspbaby.com?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "RaspBaby",
+        "url": "https://raspbaby.com",
+        "logo": "https://raspbaby.com/images/logo.png",
+        "sameAs": []
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>🎀 Free shipping on orders over $35 on Amazon · Curated with love for your little ones 🍼</p>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo" onclick="resetFilters()">
+                <span class="logo-icon">🌸</span>
+                <span class="logo-text">RaspBaby</span>
+            </a>
+            <div class="search-wrapper">
+                <div class="search-inner">
+                    <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    <input type="text" id="search" placeholder="Search baby essentials..." autocomplete="off">
+                </div>
+            </div>
+            <nav class="nav-links" id="nav-links">
+                <a href="#products" class="nav-link active" data-category="all" onclick="filterCategory('all', this)">Shop All</a>
+                <a href="#products" class="nav-link" data-category="onesies" onclick="filterCategory('onesies', this)">Onesies</a>
+                <a href="#products" class="nav-link" data-category="outfits" onclick="filterCategory('outfits', this)">Outfits</a>
+                <a href="#products" class="nav-link" data-category="nursery" onclick="filterCategory('nursery', this)">Nursery</a>
+                <a href="#articles" class="nav-link" onclick="scrollToArticles()">Blog</a>
+                <button class="mobile-toggle" id="mobile-toggle" onclick="toggleMobileMenu()">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="heart-pulse">💕</span>
+                    Trusted by 10,000+ parents
+                </div>
+                <h1 class="hero-title">
+                    The Cutest Little Things<br>
+                    <span class="accent">for Your Little One</span>
+                </h1>
+                <p class="hero-sub">Handpicked baby clothes, nursery essentials & maternity must-haves — all top-rated on Amazon.</p>
+                <div class="hero-actions">
+                    <a href="#products" class="cta-btn primary">
+                        <span>Shop Baby Essentials</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#articles" class="cta-btn secondary">Read Our Guides</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num" data-count="200">0</span>
+                        <span class="stat-label">Products</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-num" data-count="10">0</span>
+                        <span class="stat-label">Categories</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-num" data-count="50">0</span>
+                        <span class="stat-label">Top Brands</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category Cards -->
+        <section class="categories-section" id="categories-section">
+            <div class="container">
+                <h2 class="section-label">Shop by Category</h2>
+                <p class="section-desc">Everything your little bundle of joy needs — curated with love</p>
+                <div class="cat-grid">
+                    <div class="cat-card" onclick="filterCategory('onesies')" style="--accent:#FFB6C1">
+                        <span class="cat-icon">👶</span>
+                        <span class="cat-label">Onesies & Rompers</span>
+                        <span class="cat-count" data-cat="onesies">0</span>
+                    </div>
+                    <div class="cat-card" onclick="filterCategory('sleepwear')" style="--accent:#B0C4DE">
+                        <span class="cat-icon">🌙</span>
+                        <span class="cat-label">Sleepwear & Swaddles</span>
+                        <span class="cat-count" data-cat="sleepwear">0</span>
+                    </div>
+                    <div class="cat-card" onclick="filterCategory('outfits')" style="--accent:#DDA0DD">
+                        <span class="cat-icon">👗</span>
+                        <span class="cat-label">Outfits & Sets</span>
+                        <span class="cat-count" data-cat="outfits">0</span>
+                    </div>
+                    <div class="cat-card" onclick="filterCategory('shoes')" style="--accent:#FFDAB9">
+                        <span class="cat-icon">👟</span>
+                        <span class="cat-label">Shoes & Socks</span>
+                        <span class="cat-count" data-cat="shoes">0</span>
+                    </div>
+                    <div class="cat-card" onclick="filterCategory('maternity')" style="--accent:#E6E6FA">
+                        <span class="cat-icon">🤰</span>
+                        <span class="cat-label">Maternity & Nursing</span>
+                        <span class="cat-count" data-cat="maternity">0</span>
+                    </div>
+                    <div class="cat-card" onclick="filterCategory('nursery')" style="--accent:#FFE4E1">
+                        <span class="cat-icon">🛏️</span>
+                        <span class="cat-label">Nursery & Bedding</span>
+                        <span class="cat-count" data-cat="nursery">0</span>
+                    </div>
+                    <div class="cat-card" onclick="filterCategory('strollers')" style="--accent:#F0E68C">
+                        <span class="cat-icon">🚼</span>
+                        <span class="cat-label">Strollers & Car Seats</span>
+                        <span class="cat-count" data-cat="strollers">0</span>
+                    </div>
+                    <div class="cat-card" onclick="filterCategory('feeding')" style="--accent:#98FB98">
+                        <span class="cat-icon">🍼</span>
+                        <span class="cat-label">Feeding</span>
+                        <span class="cat-count" data-cat="feeding">0</span>
+                    </div>
+                    <div class="cat-card" onclick="filterCategory('bath')" style="--accent:#ADD8E6">
+                        <span class="cat-icon">🛁</span>
+                        <span class="cat-label">Bath & Skincare</span>
+                        <span class="cat-count" data-cat="bath">0</span>
+                    </div>
+                    <div class="cat-card" onclick="filterCategory('diapering')" style="--accent:#FFFACD">
+                        <span class="cat-icon">🧷</span>
+                        <span class="cat-label">Diapering</span>
+                        <span class="cat-count" data-cat="diapering">0</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filters & Products -->
+        <section class="products-section" id="products">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <h2 class="section-title" id="section-title">All Products</h2>
+                        <p class="product-count" id="product-count"></p>
+                    </div>
+                    <div class="filter-controls">
+                        <div class="filter-group">
+                            <label>Sort by</label>
+                            <select id="sort-select" onchange="applySort(this.value)">
+                                <option value="popular">Most Popular</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="rating">Highest Rated</option>
+                                <option value="name">Name A-Z</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label>Price Range</label>
+                            <select id="price-filter" onchange="applyPriceFilter(this.value)">
+                                <option value="all">All Prices</option>
+                                <option value="0-15">Under $15</option>
+                                <option value="15-30">$15 - $30</option>
+                                <option value="30-50">$30 - $50</option>
+                                <option value="50-100">$50 - $100</option>
+                                <option value="100+">$100+</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label>Rating</label>
+                            <select id="rating-filter" onchange="applyRatingFilter(this.value)">
+                                <option value="all">All Ratings</option>
+                                <option value="4.5">4.5+ Stars</option>
+                                <option value="4">4+ Stars</option>
+                                <option value="3.5">3.5+ Stars</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-grid" id="product-grid">
+                    <div class="loading-spinner">
+                        <div class="spinner"></div>
+                        <p>Loading adorable products...</p>
+                    </div>
+                </div>
+                <div class="load-more-container" id="load-more-container" style="display:none">
+                    <button class="load-more-btn" onclick="loadMore()">Load More Products</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Articles / Blog Section -->
+        <section class="articles-section" id="articles">
+            <div class="container">
+                <h2 class="section-label">Parenting Guides & Tips</h2>
+                <p class="section-desc">Expert advice to help you navigate the beautiful journey of parenthood</p>
+                <div class="article-grid">
+                    <article class="article-card" onclick="openArticle('best-baby-clothes-2026')">
+                        <div class="article-img" style="background:linear-gradient(135deg,#FFB6C1,#FFE4E1)">
+                            <span class="article-emoji">👶</span>
+                        </div>
+                        <div class="article-body">
+                            <span class="article-tag">Buying Guide</span>
+                            <h3>The 15 Best Baby Clothes Brands in 2026</h3>
+                            <p>From organic cotton onesies to designer rompers — our complete guide to dressing your little one in style and comfort.</p>
+                            <span class="article-date">Feb 2026 · 8 min read</span>
+                        </div>
+                    </article>
+                    <article class="article-card" onclick="openArticle('nursery-essentials')">
+                        <div class="article-img" style="background:linear-gradient(135deg,#B0C4DE,#E6E6FA)">
+                            <span class="article-emoji">🛏️</span>
+                        </div>
+                        <div class="article-body">
+                            <span class="article-tag">Nursery</span>
+                            <h3>Complete Nursery Checklist: Everything You Actually Need</h3>
+                            <p>Skip the overwhelm. Here's exactly what your baby's nursery needs — and what you can skip.</p>
+                            <span class="article-date">Feb 2026 · 6 min read</span>
+                        </div>
+                    </article>
+                    <article class="article-card" onclick="openArticle('swaddle-guide')">
+                        <div class="article-img" style="background:linear-gradient(135deg,#DDA0DD,#FFB6C1)">
+                            <span class="article-emoji">🌙</span>
+                        </div>
+                        <div class="article-body">
+                            <span class="article-tag">Sleep</span>
+                            <h3>Swaddle vs Sleep Sack: Which is Best for Your Baby?</h3>
+                            <p>Everything you need to know about keeping your baby cozy and safe during sleep time.</p>
+                            <span class="article-date">Feb 2026 · 5 min read</span>
+                        </div>
+                    </article>
+                    <article class="article-card" onclick="openArticle('baby-shower-gifts')">
+                        <div class="article-img" style="background:linear-gradient(135deg,#98FB98,#ADD8E6)">
+                            <span class="article-emoji">🎁</span>
+                        </div>
+                        <div class="article-body">
+                            <span class="article-tag">Gift Guide</span>
+                            <h3>25 Baby Shower Gifts That Parents Actually Want</h3>
+                            <p>Forget the generic gifts. These are the presents new parents will actually use and love.</p>
+                            <span class="article-date">Feb 2026 · 7 min read</span>
+                        </div>
+                    </article>
+                    <article class="article-card" onclick="openArticle('organic-baby-clothing')">
+                        <div class="article-img" style="background:linear-gradient(135deg,#FFDAB9,#FFE4E1)">
+                            <span class="article-emoji">🌿</span>
+                        </div>
+                        <div class="article-body">
+                            <span class="article-tag">Sustainability</span>
+                            <h3>Why Organic Baby Clothes Matter (And Our Top Picks)</h3>
+                            <p>A deep dive into organic fabrics, certifications, and the best brands for your baby's sensitive skin.</p>
+                            <span class="article-date">Feb 2026 · 6 min read</span>
+                        </div>
+                    </article>
+                    <article class="article-card" onclick="openArticle('first-year-essentials')">
+                        <div class="article-img" style="background:linear-gradient(135deg,#F0E68C,#FFFACD)">
+                            <span class="article-emoji">📋</span>
+                        </div>
+                        <div class="article-body">
+                            <span class="article-tag">Checklist</span>
+                            <h3>First Year Baby Essentials: Month-by-Month Guide</h3>
+                            <p>What you need at each stage — from newborn to 12 months. Save money by buying only what matters.</p>
+                            <span class="article-date">Feb 2026 · 10 min read</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust / Social Proof -->
+        <section class="trust-section">
+            <div class="container">
+                <div class="trust-grid">
+                    <div class="trust-item">
+                        <span class="trust-icon">✅</span>
+                        <h4>Amazon Verified</h4>
+                        <p>All products link directly to Amazon with real reviews</p>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-icon">🚚</span>
+                        <h4>Prime Eligible</h4>
+                        <p>Most items qualify for free Prime shipping</p>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-icon">⭐</span>
+                        <h4>Top Rated</h4>
+                        <p>Only products with 4+ star ratings make our list</p>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-icon">💝</span>
+                        <h4>Parent Approved</h4>
+                        <p>Curated by real parents who know what works</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-box">
+                    <h2>Get the Best Deals in Your Inbox</h2>
+                    <p>Join 5,000+ parents who get weekly picks of the cutest baby products & exclusive Amazon deals.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); subscribeNewsletter()">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe 💌</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">🌸 RaspBaby</div>
+                    <p>Curating the sweetest baby essentials for modern parents.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Categories</h4>
+                    <a href="#" onclick="filterCategory('onesies')">Onesies & Rompers</a>
+                    <a href="#" onclick="filterCategory('sleepwear')">Sleepwear</a>
+                    <a href="#" onclick="filterCategory('outfits')">Outfits & Sets</a>
+                    <a href="#" onclick="filterCategory('nursery')">Nursery</a>
+                    <a href="#" onclick="filterCategory('strollers')">Strollers</a>
+                </div>
+                <div class="footer-links">
+                    <h4>More</h4>
+                    <a href="#" onclick="filterCategory('feeding')">Feeding</a>
+                    <a href="#" onclick="filterCategory('bath')">Bath & Skincare</a>
+                    <a href="#" onclick="filterCategory('maternity')">Maternity</a>
+                    <a href="#" onclick="filterCategory('shoes')">Baby Shoes</a>
+                    <a href="#" onclick="filterCategory('diapering')">Diapering</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <a href="#articles">Blog</a>
+                    <a href="#articles">Buying Guides</a>
+                    <a href="#articles">Gift Ideas</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="disclaimer">As an Amazon Associate, we earn from qualifying purchases. Prices and availability are subject to change.</p>
+                <p class="copyright">© 2026 RaspBaby. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
